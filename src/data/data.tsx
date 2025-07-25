@@ -11,9 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import dolomitesImage from '../images/header-background-dolomites.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -68,19 +66,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  imageSrc: dolomitesImage,
+  name: `Hello, I'm Andrei.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Cluj-Napoca based <strong className="text-stone-100">Java Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Endava</strong> helping to build a modern, microservice platform, for one
+        of the biggest payment gateways in the world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me <strong className="text-stone-100">taking photos</strong>,
+        strumming my <strong className="text-stone-100">guitar</strong>, or exploring the{' '}
+        <strong className="text-stone-100">mountains</strong>.
       </p>
     </>
   ),
@@ -104,16 +102,24 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description1: `I am a Java developer with hands-on experience in the Fintech industry, 
+  specializing in the development and integration of alternative payment solutions and gateways such as PayPal, 
+  dLocal or Bizum. I deliver end-to-end solutions across both legacy systems and modern microservice architectures, 
+  ensuring seamless performance and scalability.`,
+
+  description2: `My work spans the full product lifecycle—from design and development to deployment and ongoing support. 
+  I play an active role in maintaining 24/7 availability for live services, ensuring high reliability and 
+  responsiveness in production environments.`,
+
+  description3: `I work with a broad set of technologies, including Java, Spring, REST APIs, Kafka, relational 
+  and non-relational databases, as well as container orchestration platforms like Kubernetes and OpenShift.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Cluj-Napoca, Romania', Icon: MapIcon},
+    {label: 'Age', text: '30', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Romanian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Tech, sports, nature, music', Icon: SparklesIcon},
+    {label: 'Study', text: 'Technical University of Cluj-Napoca', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Endava.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,73 +128,55 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Technical',
     skills: [
       {
-        name: 'English',
+        name: 'Java',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Spring',
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'Security',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Databases',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Openshift',
+        level: 9,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Soft',
     skills: [
       {
-        name: 'React Native',
+        name: 'Communication',
+        level: 10,
+      },
+      {
+        name: 'Help others',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Multitasking',
+        level: 10,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Adaptability',
+        level: 10,
       },
+      {
+        name: 'Time management',
+        level: 10,
+      }
     ],
-  },
+  }
 ];
 
 /**
@@ -336,27 +324,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out via Email or LinkedIn for opportunities, collaborations, or technical discussions.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'andreiprigoanag@gmail.com',
+      href: 'mailto:andreiprigoanag@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Cluj-Napoca, Romania',
+      href: 'https://maps.app.goo.gl/p8R2rVzfSJZfyxfB9',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'andreiprigoana',
+      href: 'https://github.com/andreiprigoana',
+    },
+    {
+      type: ContactType.Instagram,
+      text: '@andreiprigoana',
+      href: 'https://www.instagram.com/andreiprigoana/',
     },
   ],
 };
@@ -365,9 +353,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/andreiprigoana'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/andrei-prigoan%C4%83-314281110/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/andreiprigoana/'},
 ];
