@@ -12,17 +12,26 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import dolomitesImage from '../images/header-background-dolomites.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/portofolio-1-aci.jpg';
+import porfolioImage2 from '../images/portfolio/portofolio-2-paypal.jpg';
+import porfolioImage3 from '../images/portfolio/portofolio-3-redsys.jpg';
+import porfolioImage4 from '../images/portfolio/portofolio-4-dlocal.jpg';
+import porfolioImage5 from '../images/portfolio/portofolio-5-endava.jpg';
+import porfolioImage6 from '../images/portfolio/portofolio-6-worldpay.jpg';
+import porfolioImage7 from '../images/portfolio/portofolio-7-rest.jpg';
+import porfolioImage8 from '../images/portfolio/portofolio-8-spring.jpg';
+import porfolioImage9 from '../images/portfolio/portofolio-9-microservices.jpg';
+import porfolioImage10 from '../images/portfolio/portofolio-10-java.jpg';
+import porfolioImage11 from '../images/portfolio/portofolio-11-openshift.jpg';
+import porfolioImage12 from '../images/portfolio/portofolio-12-splunk.jpg';
+import porfolioImage13 from '../images/portfolio/portofolio-13-swagger.jpg';
+import porfolioImage14 from '../images/portfolio/portofolio-14-openapi.jpg';
+import porfolioImage15 from '../images/portfolio/portofolio-15-sysdig.jpg';
+import porfolioImage16 from '../images/portfolio/portofolio-16-cloudbees.jpg';
+import porfolioImage17 from '../images/portfolio/portofolio-17-git.jpg';
+import porfolioImage18 from '../images/portfolio/portofolio-18-cassandra.jpg';
+import porfolioImage19 from '../images/portfolio/portofolio-19-postgresql.jpg';
+import porfolioImage20 from '../images/portfolio/portofolio-20-safe.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -248,6 +257,60 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage11,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage12,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage13,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage14,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage15,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage16,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage17,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage18,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage19,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage20,
   },
 ];
 
