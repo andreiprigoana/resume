@@ -107,7 +107,7 @@ export const aboutData: About = {
   dLocal or Bizum. I deliver end-to-end solutions across both legacy systems and modern microservice architectures, 
   ensuring seamless performance and scalability.`,
 
-  description2: `My work spans the full product lifecycle—from design and development to deployment and ongoing support. 
+  description2: `My work spans the full product lifecycle, from design and development to deployment and ongoing support. 
   I play an active role in maintaining 24/7 availability for live services, ensuring high reliability and 
   responsiveness in production environments.`,
 
@@ -119,7 +119,7 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Romanian', Icon: FlagIcon},
     {label: 'Interests', text: 'Tech, sports, nature, music', Icon: SparklesIcon},
     {label: 'Study', text: 'Technical University of Cluj-Napoca', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Endava.', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Endava', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -256,39 +256,84 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: '2014 - 2018',
+    location: 'Computer Science',
+    title: 'Technical University of Cluj-Napoca',
+    content: <>Completed coursework in programming, algorithms, databases, and operating systems. 
+                Gained hands-on experience with software development, data structures, and web technologies.
+                <br></br><br></br>
+                Key Skills:
+                <li>Object-Oriented Programming</li>  
+                <li>Algorithms & Data Structures</li>
+                <li>Relational Databases (SQL)</li>
+                <li>Operating Systems & Computer Architecture</li>  
+                <li>Web Development (HTML/CSS/JS, frameworks)</li>  
+                <li>Version Control (Git)</li>  
+                <li>Agile / Scrum methodology</li>  
+             </>
+  }
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2019 - Present',
+    location: 'Endava',
+    title: 'Java Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        At Endava, I contribute to the development and evolution of one of the world's leading payment gateways, 
+        supporting a modern microservice architecture that will handle over 200 payment methods globally.
+        <br></br><br></br>
+
+        As part of a platform-focused & end-to-end engineering team, I've been deeply involved in solving a variety of cross-cutting concerns, including:
+          <li>Developing and maintaining shared libraries and a standardized service accelerator 
+          template for consistent and rapid service delivery</li>
+          <li>Implementing centralized logging, distributed tracing, aggregated metrics, and observability standards</li>
+          <li>Designing and enforcing security, fault/latency tolerance, configuration management, 
+            load balancing, and service discovery patterns across the ecosystem</li>
+          <li>Ensure application security and compliance through the use of Black Duck (open source vulnerability scanning) 
+            and Checkmarx (static application security testing)</li>
+          <li>Ensure code quality and maintainability by integrating SonarQube into our pipelines and reviewing at each
+             build static analysis results and also using in my daily work AI plugin such as GitHub Copilot.</li>
+          <br></br>
+
+        To support independent deployments and frequent releases, I was involved in creating a robust CI/CD pipeline, 
+        enabling automated delivery of both services and libraries across multiple environments. 
+        This involved working with tools such as Jenkins, Cloudbees or Openshift.
+        Alongside this platform work.
+        <br></br><br></br>
+
+        I’m also actively involved in maintaining and enhancing our legacy payment gateway, ensuring business 
+        continuity while enabling seamless integration with the microservice architecture.
+        <br></br><br></br>
+
+        My work covers the full product lifecycle, from design and development to deployment and ongoing operations. 
+        I actively contribute to maintaining 24/7 availability for production services by leveraging custom made Splunk
+         dashboards and alerts for real-time monitoring, and using Sysdig for system-level insights and troubleshooting.
+        <br></br><br></br>
+
+        In addition to my technical contributions, I’m engaged in several initiatives that support our team and organization:
+          <li>Technical interviewer for engineering candidates</li>
+          <li>1:1 mentor for interns as part of Endava’s internship program</li>
+          <li>Participate in Agile ceremonies and planning sessions, 
+            including PI Planning, Iteration Planning, and System Demos, 
+            following the SAFe (Scaled Agile Framework) methodology to ensure 
+            alignment and continuous delivery across teams</li>
+      </>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'July 2017 - September 2017',
+    location: 'Garmin',
+    title: 'Java Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        As a Java Intern, I was part of an Agile development team responsible 
+        for the development and maintenance of Garmin’s website. 
+        My work focused on backend tasks using Java and the Spring framework. 
+        I actively participated in Agile ceremonies such as sprint planning and retrospectives, 
+        collaborated with the testing team to ensure code quality, and received one-on-one mentorship 
+        to enhance my technical and professional development.
       </p>
     ),
   },
