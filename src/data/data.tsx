@@ -251,29 +251,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: '2014 - 2018',
-    location: 'Computer Science',
-    title: 'Technical University of Cluj-Napoca',
-    content: <>Completed coursework in programming, algorithms, databases, and operating systems. 
-                Gained hands-on experience with software development, data structures, and web technologies.
-                <br></br><br></br>
-                Key Skills:
-                <li>Object-Oriented Programming</li>  
-                <li>Algorithms & Data Structures</li>
-                <li>Relational Databases (SQL)</li>
-                <li>Operating Systems & Computer Architecture</li>  
-                <li>Web Development (HTML/CSS/JS, frameworks)</li>  
-                <li>Version Control (Git)</li>  
-                <li>Agile / Scrum methodology</li>  
-             </>
-  }
-];
-
 export const experience: TimelineItem[] = [
   {
     date: 'January 2019 - Present',
@@ -337,6 +314,29 @@ export const experience: TimelineItem[] = [
       </p>
     ),
   },
+];
+
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+export const education: TimelineItem[] = [
+  {
+    date: '2014 - 2018',
+    location: 'Computer Science',
+    title: 'Technical University of Cluj-Napoca',
+    content: <>Completed coursework in programming, algorithms, databases, and operating systems. 
+                Gained hands-on experience with software development, data structures, and web technologies.
+                <br></br><br></br>
+                Key Skills:
+                <li>Object-Oriented Programming</li>  
+                <li>Algorithms & Data Structures</li>
+                <li>Relational Databases (SQL)</li>
+                <li>Operating Systems & Computer Architecture</li>  
+                <li>Web Development (HTML/CSS/JS, frameworks)</li>  
+                <li>Version Control (Git)</li>  
+                <li>Agile / Scrum methodology</li>  
+             </>
+  }
 ];
 
 /**
