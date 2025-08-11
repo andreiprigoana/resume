@@ -38,6 +38,7 @@ import porfolioImage23 from '../images/portfolio/portofolio-23-kafka.jpg';
 import porfolioImage24 from '../images/portfolio/portofolio-24-kubernetes.jpg';
 import porfolioImage25 from '../images/portfolio/portofolio-25-copilot.jpg';
 import porfolioImage26 from '../images/portfolio/portofolio-26-intellij.jpg';
+import markTwain from '../images/mark-twain.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -199,107 +200,159 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.endava.com/',
     image: porfolioImage5,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://worldpay.com/',
     image: porfolioImage6,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.paypal.com/',
     image: porfolioImage2,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://redsys.es/',
     image: porfolioImage3,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.dlocal.com/',
     image: porfolioImage4,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.aciworldwide.com/',
     image: porfolioImage1,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://restfulapi.net/',
     image: porfolioImage7,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://spring.io/',
     image: porfolioImage8,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.java.com/',
     image: porfolioImage10,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.geeksforgeeks.org/system-design/microservices/',
     image: porfolioImage9,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.redhat.com/en/technologies/cloud-computing/openshift',
     image: porfolioImage11,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.splunk.com/',
     image: porfolioImage12,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://swagger.io/',
     image: porfolioImage13,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.openapis.org/',
     image: porfolioImage14,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.sysdig.com/',
     image: porfolioImage15,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.cloudbees.com/',
     image: porfolioImage16,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://git-scm.com/',
     image: porfolioImage17,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://cassandra.apache.org/',
     image: porfolioImage18,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.postgresql.org/',
     image: porfolioImage19,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.atlassian.com/agile/agile-at-scale/what-is-safe',
     image: porfolioImage20,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://maven.apache.org/',
     image: porfolioImage21,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.mysql.com/',
     image: porfolioImage22,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://kafka.apache.org/',
     image: porfolioImage23,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://kubernetes.io/',
     image: porfolioImage24,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://github.com/features/copilot',
     image: porfolioImage25,
   },
   {
-    url: 'https://reactresume.com',
+    title: '',
+    description: '',
+    url: 'https://www.jetbrains.com/idea/',
     image: porfolioImage26,
   },
 ];
@@ -399,19 +452,9 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Mark Twain',
+      text: 'The two most important days in your life are the day you are born and the day you find out why.',
+      image: markTwain,
     },
   ],
 };
