@@ -32,6 +32,12 @@ import porfolioImage17 from '../images/portfolio/portofolio-17-git.jpg';
 import porfolioImage18 from '../images/portfolio/portofolio-18-cassandra.jpg';
 import porfolioImage19 from '../images/portfolio/portofolio-19-postgresql.jpg';
 import porfolioImage20 from '../images/portfolio/portofolio-20-safe.jpg';
+import porfolioImage21 from '../images/portfolio/portofolio-21-maven.jpg';
+import porfolioImage22 from '../images/portfolio/portofolio-22-sql.jpg';
+import porfolioImage23 from '../images/portfolio/portofolio-23-kafka.jpg';
+import porfolioImage24 from '../images/portfolio/portofolio-24-kubernetes.jpg';
+import porfolioImage25 from '../images/portfolio/portofolio-25-copilot.jpg';
+import porfolioImage26 from '../images/portfolio/portofolio-26-intellij.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -193,124 +199,108 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage2,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage3,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage4,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage1,
+  },
+  {
     url: 'https://reactresume.com',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
+    url: 'https://reactresume.com',
+    image: porfolioImage9,
+  },
+  {
     url: 'https://reactresume.com',
     image: porfolioImage11,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage12,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage13,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage14,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage15,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage16,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage17,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage18,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage19,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage20,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage21,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage22,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage23,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage24,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage25,
+  },
+  {
+    url: 'https://reactresume.com',
+    image: porfolioImage26,
   },
 ];
 
