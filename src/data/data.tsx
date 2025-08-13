@@ -12,12 +12,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import dolomitesImage from '../images/header-background-dolomites.webp';
-import porfolioImage1 from '../images/portfolio/portofolio-1-aci.jpg';
-import porfolioImage2 from '../images/portfolio/portofolio-2-paypal.jpg';
-import porfolioImage3 from '../images/portfolio/portofolio-3-redsys.jpg';
-import porfolioImage4 from '../images/portfolio/portofolio-4-dlocal.jpg';
+import porfolioImage1 from '../images/portfolio/portofolio-2-apm.jpg';
 import porfolioImage5 from '../images/portfolio/portofolio-5-endava.jpg';
-import porfolioImage6 from '../images/portfolio/portofolio-6-worldpay.jpg';
 import porfolioImage7 from '../images/portfolio/portofolio-7-rest.jpg';
 import porfolioImage8 from '../images/portfolio/portofolio-8-spring.jpg';
 import porfolioImage9 from '../images/portfolio/portofolio-9-microservices.jpg';
@@ -208,31 +204,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: '',
     description: '',
-    url: 'https://worldpay.com/',
-    image: porfolioImage6,
-  },
-  {
-    title: '',
-    description: '',
-    url: 'https://www.paypal.com/',
-    image: porfolioImage2,
-  },
-  {
-    title: '',
-    description: '',
-    url: 'https://redsys.es/',
-    image: porfolioImage3,
-  },
-  {
-    title: '',
-    description: '',
-    url: 'https://www.dlocal.com/',
-    image: porfolioImage4,
-  },
-  {
-    title: '',
-    description: '',
-    url: 'https://www.aciworldwide.com/',
+    url: 'https://www.checkout.com/blog/what-are-alternative-payment-methods',
     image: porfolioImage1,
   },
   {
