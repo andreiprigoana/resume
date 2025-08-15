@@ -95,7 +95,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/resume/invoice_test.pdf',
+      href: '/resume/Andrei-Prigoana-CV-Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
