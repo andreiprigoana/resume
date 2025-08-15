@@ -12,6 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import dolomitesImage from '../images/header-background-dolomites.webp';
+import markTwain from '../images/mark-twain.jpg';
 import porfolioImage1 from '../images/portfolio/portofolio-2-apm.jpg';
 import porfolioImage5 from '../images/portfolio/portofolio-5-endava.jpg';
 import porfolioImage7 from '../images/portfolio/portofolio-7-rest.jpg';
@@ -34,7 +35,6 @@ import porfolioImage23 from '../images/portfolio/portofolio-23-kafka.jpg';
 import porfolioImage24 from '../images/portfolio/portofolio-24-kubernetes.jpg';
 import porfolioImage25 from '../images/portfolio/portofolio-25-copilot.jpg';
 import porfolioImage26 from '../images/portfolio/portofolio-26-intellij.jpg';
-import markTwain from '../images/mark-twain.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -83,20 +83,20 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Cluj-Napoca based <strong className="text-stone-100">Java Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Endava</strong> helping to build a modern, microservice platform, for one
-        of the biggest payment gateways in the world.
+        I'm a Cluj-Napoca based <strong className="text-stone-100">Java Software Engineer</strong>, currently working at{' '}
+        <strong className="text-stone-100">Endava</strong> helping to build a modern, microservice platform, for one of
+        the biggest payment gateways in the world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me <strong className="text-stone-100">taking photos</strong>,
-        strumming my <strong className="text-stone-100">guitar</strong>, or exploring the{' '}
+        In my free time time, you can catch me <strong className="text-stone-100">taking photos</strong>, strumming my{' '}
+        <strong className="text-stone-100">guitar</strong>, or exploring the{' '}
         <strong className="text-stone-100">mountains</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/resume/invoice_test.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -186,9 +186,9 @@ export const skills: SkillGroup[] = [
       {
         name: 'Time management',
         level: 10,
-      }
+      },
     ],
-  }
+  },
 ];
 
 /**
@@ -336,44 +336,53 @@ export const experience: TimelineItem[] = [
     title: 'Java Developer',
     content: (
       <>
-        At Endava, I contribute to the development and evolution of one of the world's leading payment gateways, 
+        At Endava, I contribute to the development and evolution of one of the world's leading payment gateways,
         supporting a modern microservice architecture that will handle over 200 payment methods globally.
-        <br></br><br></br>
-
-        As part of a platform-focused & end-to-end engineering team, I've been deeply involved in solving a variety of cross-cutting concerns, including:
-          <li>Developing and maintaining shared libraries and a standardized service accelerator 
-          template for consistent and rapid service delivery</li>
-          <li>Implementing centralized logging, distributed tracing, aggregated metrics, and observability standards</li>
-          <li>Designing and enforcing security, fault/latency tolerance, configuration management, 
-            load balancing, and service discovery patterns across the ecosystem</li>
-          <li>Ensure application security and compliance through the use of Black Duck (open source vulnerability scanning) 
-            and Checkmarx (static application security testing)</li>
-          <li>Ensure code quality and maintainability by integrating SonarQube into our pipelines and reviewing at each
-             build static analysis results and also using in my daily work AI plugin such as GitHub Copilot.</li>
-          <br></br>
-
-        To support independent deployments and frequent releases, I was involved in creating a robust CI/CD pipeline, 
-        enabling automated delivery of both services and libraries across multiple environments. 
-        This involved working with tools such as Jenkins, Cloudbees or Openshift.
-        Alongside this platform work.
-        <br></br><br></br>
-
-        I’m also actively involved in maintaining and enhancing our legacy payment gateway, ensuring business 
-        continuity while enabling seamless integration with the microservice architecture.
-        <br></br><br></br>
-
-        My work covers the full product lifecycle, from design and development to deployment and ongoing operations. 
-        I actively contribute to maintaining 24/7 availability for production services by leveraging custom made Splunk
-         dashboards and alerts for real-time monitoring, and using Sysdig for system-level insights and troubleshooting.
-        <br></br><br></br>
-
-        In addition to my technical contributions, I’m engaged in several initiatives that support our team and organization:
-          <li>Technical interviewer for engineering candidates</li>
-          <li>1:1 mentor for interns as part of Endava’s internship program</li>
-          <li>Participate in Agile ceremonies and planning sessions, 
-            including PI Planning, Iteration Planning, and System Demos, 
-            following the SAFe (Scaled Agile Framework) methodology to ensure 
-            alignment and continuous delivery across teams</li>
+        <br></br>
+        <br></br>
+        As part of a platform-focused & end-to-end engineering team, I've been deeply involved in solving a variety of
+        cross-cutting concerns, including:
+        <li>
+          Developing and maintaining shared libraries and a standardized service accelerator template for consistent and
+          rapid service delivery
+        </li>
+        <li>Implementing centralized logging, distributed tracing, aggregated metrics, and observability standards</li>
+        <li>
+          Designing and enforcing security, fault/latency tolerance, configuration management, load balancing, and
+          service discovery patterns across the ecosystem
+        </li>
+        <li>
+          Ensure application security and compliance through the use of Black Duck (open source vulnerability scanning)
+          and Checkmarx (static application security testing)
+        </li>
+        <li>
+          Ensure code quality and maintainability by integrating SonarQube into our pipelines and reviewing at each
+          build static analysis results and also using in my daily work AI plugin such as GitHub Copilot.
+        </li>
+        <br></br>
+        To support independent deployments and frequent releases, I was involved in creating a robust CI/CD pipeline,
+        enabling automated delivery of both services and libraries across multiple environments. This involved working
+        with tools such as Jenkins, Cloudbees or Openshift. Alongside this platform work.
+        <br></br>
+        <br></br>
+        I’m also actively involved in maintaining and enhancing our legacy payment gateway, ensuring business continuity
+        while enabling seamless integration with the microservice architecture.
+        <br></br>
+        <br></br>
+        My work covers the full product lifecycle, from design and development to deployment and ongoing operations. I
+        actively contribute to maintaining 24/7 availability for production services by leveraging custom made Splunk
+        dashboards and alerts for real-time monitoring, and using Sysdig for system-level insights and troubleshooting.
+        <br></br>
+        <br></br>
+        In addition to my technical contributions, I’m engaged in several initiatives that support our team and
+        organization:
+        <li>Technical interviewer for engineering candidates</li>
+        <li>1:1 mentor for interns as part of Endava’s internship program</li>
+        <li>
+          Participate in Agile ceremonies and planning sessions, including PI Planning, Iteration Planning, and System
+          Demos, following the SAFe (Scaled Agile Framework) methodology to ensure alignment and continuous delivery
+          across teams
+        </li>
       </>
     ),
   },
@@ -383,12 +392,10 @@ export const experience: TimelineItem[] = [
     title: 'Java Intern',
     content: (
       <p>
-        As a Java Intern, I was part of an Agile development team responsible 
-        for the development and maintenance of Garmin’s website. 
-        My work focused on backend tasks using Java and the Spring framework. 
-        I actively participated in Agile ceremonies such as sprint planning and retrospectives, 
-        collaborated with the testing team to ensure code quality, and received one-on-one mentorship 
-        to enhance my technical and professional development.
+        As a Java Intern, I was part of an Agile development team responsible for the development and maintenance of
+        Garmin’s website. My work focused on backend tasks using Java and the Spring framework. I actively participated
+        in Agile ceremonies such as sprint planning and retrospectives, collaborated with the testing team to ensure
+        code quality, and received one-on-one mentorship to enhance my technical and professional development.
       </p>
     ),
   },
@@ -402,19 +409,23 @@ export const education: TimelineItem[] = [
     date: '2014 - 2018',
     location: 'Computer Science',
     title: 'Technical University of Cluj-Napoca',
-    content: <>Completed coursework in programming, algorithms, databases, and operating systems. 
-                Gained hands-on experience with software development, data structures, and web technologies.
-                <br></br><br></br>
-                Key Skills:
-                <li>Object-Oriented Programming</li>  
-                <li>Algorithms & Data Structures</li>
-                <li>Relational Databases (SQL)</li>
-                <li>Operating Systems & Computer Architecture</li>  
-                <li>Web Development (HTML/CSS/JS, frameworks)</li>  
-                <li>Version Control (Git)</li>  
-                <li>Agile / Scrum methodology</li>  
-             </>
-  }
+    content: (
+      <>
+        Completed coursework in programming, algorithms, databases, and operating systems. Gained hands-on experience
+        with software development, data structures, and web technologies.
+        <br></br>
+        <br></br>
+        Key Skills:
+        <li>Object-Oriented Programming</li>
+        <li>Algorithms & Data Structures</li>
+        <li>Relational Databases (SQL)</li>
+        <li>Operating Systems & Computer Architecture</li>
+        <li>Web Development (HTML/CSS/JS, frameworks)</li>
+        <li>Version Control (Git)</li>
+        <li>Agile / Scrum methodology</li>
+      </>
+    ),
+  },
 ];
 
 /**
@@ -437,7 +448,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out via Email or LinkedIn for opportunities, collaborations, or technical discussions.',
+  description:
+    'Feel free to reach out via Email or LinkedIn for opportunities, collaborations, or technical discussions.',
   items: [
     {
       type: ContactType.Email,
