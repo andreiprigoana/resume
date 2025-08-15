@@ -14,7 +14,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import dolomitesImage from '../images/header-background-dolomites.webp';
 import markTwain from '../images/mark-twain.jpg';
 import porfolioImage1 from '../images/portfolio/portofolio-2-apm.jpg';
-import porfolioImage5 from '../images/portfolio/portofolio-5-endava.jpg';
 import porfolioImage7 from '../images/portfolio/portofolio-7-rest.jpg';
 import porfolioImage8 from '../images/portfolio/portofolio-8-spring.jpg';
 import porfolioImage9 from '../images/portfolio/portofolio-9-microservices.jpg';
@@ -36,7 +35,7 @@ import porfolioImage24 from '../images/portfolio/portofolio-24-kubernetes.jpg';
 import porfolioImage25 from '../images/portfolio/portofolio-25-copilot.jpg';
 import porfolioImage26 from '../images/portfolio/portofolio-26-intellij.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import inspirationImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -46,7 +45,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  InspirationSection,
   TimelineItem,
 } from './dataDef';
 
@@ -69,7 +68,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Inspiration: 'inspiration',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -114,17 +113,19 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description1: `I am a Java developer with hands-on experience in the Fintech industry, 
-  specializing in the development and integration of alternative payment solutions and gateways such as PayPal, 
-  dLocal or Bizum. I deliver end-to-end solutions across both legacy systems and modern microservice architectures, 
-  ensuring seamless performance and scalability.`,
+  description1: <> I am a Java developer with hands-on experience in the <strong className="text-stone-100">Fintech industry</strong>, 
+  specializing in the development and integration of <strong className="text-stone-100">alternative payment solutions and gateways such as PayPal, 
+  dLocal or Bizum.</strong> I deliver end-to-end solutions across both legacy systems and modern microservice architectures, 
+  ensuring seamless performance and scalability. </>,
 
-  description2: `My work spans the full product lifecycle, from design and development to deployment and ongoing support. 
-  I play an active role in maintaining 24/7 availability for live services, ensuring high reliability and 
-  responsiveness in production environments.`,
+  description2: <> My work spans the <strong className="text-stone-100">full product lifecycle</strong>, 
+  from design and development to deployment and ongoing support. I play an active role in maintaining 
+  <strong className="text-stone-100"> 24/7 availability for live services</strong>, ensuring high reliability
+   and responsiveness in production environments.` </>,
 
-  description3: `I work with a broad set of technologies, including Java, Spring, REST APIs, Kafka, relational 
-  and non-relational databases, as well as container orchestration platforms like Kubernetes and OpenShift.`,
+  description3: <> I work with a broad set of technologies, including <strong className="text-stone-100">Java, Spring, REST APIs, Kafka, relational 
+  and non-relational databases</strong>, as well as container orchestration platforms like <strong className="text-stone-100">Kubernetes and OpenShift.</strong></>,
+
   aboutItems: [
     {label: 'Location', text: 'Cluj-Napoca, Romania', Icon: MapIcon},
     {label: 'Age', text: '30', Icon: CalendarIcon},
@@ -195,12 +196,6 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: '',
-    description: '',
-    url: 'https://www.endava.com/',
-    image: porfolioImage5,
-  },
   {
     title: '',
     description: '',
@@ -429,11 +424,11 @@ export const education: TimelineItem[] = [
 ];
 
 /**
- * Testimonial section
+ * Inspiration section
  */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
+export const testimonial: InspirationSection = {
+  imageSrc: inspirationImage,
+  inspiration: [
     {
       name: 'Mark Twain',
       text: 'The two most important days in your life are the day you are born and the day you find out why.',

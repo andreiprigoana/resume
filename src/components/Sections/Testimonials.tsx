@@ -3,7 +3,7 @@ import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useSt
 
 import {isApple, isMobile} from '../../config';
 import {SectionId, testimonial} from '../../data/data';
-import type {Testimonial} from '../../data/dataDef';
+import type {Inspiration} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
@@ -19,7 +19,7 @@ const Testimonials: FC = memo(() => {
 
   const {width} = useWindow();
 
-  const {imageSrc, testimonials} = testimonial;
+  const {imageSrc, inspiration} = testimonial;
 
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;
@@ -51,12 +51,12 @@ const Testimonials: FC = memo(() => {
     [],
   );
   const next = useCallback(() => {
-    if (activeIndex + 1 === testimonials.length) {
+    if (activeIndex + 1 === inspiration.length) {
       setTestimonial(0)();
     } else {
       setTestimonial(activeIndex + 1)();
     }
-  }, [activeIndex, setTestimonial, testimonials.length]);
+  }, [activeIndex, setTestimonial, inspiration.length]);
 
   const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
     setScrollValue(event.currentTarget.scrollLeft);
@@ -64,13 +64,13 @@ const Testimonials: FC = memo(() => {
 
   useInterval(next, 10000);
 
-  // If no testimonials, don't render the section
-  if (!testimonials.length) {
+  // If no inspirations, don't render the section
+  if (!inspiration.length) {
     return null;
   }
 
   return (
-    <Section noPadding sectionId={SectionId.Testimonials}>
+    <Section noPadding sectionId={SectionId.Inspiration}>
       <div
         className={classNames(
           'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',
@@ -84,7 +84,7 @@ const Testimonials: FC = memo(() => {
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
               ref={scrollContainer}>
-              {testimonials.map((testimonial, index) => {
+              {inspiration.map((testimonial, index) => {
                 const isActive = index === activeIndex;
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
@@ -92,7 +92,7 @@ const Testimonials: FC = memo(() => {
               })}
             </div>
             <div className="flex gap-x-4">
-              {[...Array(testimonials.length)].map((_, index) => {
+              {[...Array(inspiration.length)].map((_, index) => {
                 const isActive = index === activeIndex;
                 return (
                   <button
@@ -113,7 +113,7 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
+const Testimonial: FC<{testimonial: Inspiration; isActive: boolean}> = memo(
   ({testimonial: {text, name, image}, isActive}) => (
     <div
       className={classNames(

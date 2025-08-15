@@ -39,9 +39,9 @@ interface HeroActionItem {
  */
 export interface About {
   profileImageSrc?: string;
-  description1: string;
-  description2: string;
-  description3: string;
+  description1: JSX.Element;
+  description2: JSX.Element;
+  description3: JSX.Element;
   aboutItems: AboutItem[];
 }
 
@@ -96,14 +96,14 @@ export interface TimelineItem {
 }
 
 /**
- * Testimonial section
+ * Inspiration section
  */
-export interface TestimonialSection {
+export interface InspirationSection {
   imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
+  inspiration: Inspiration[];
 }
 
-export interface Testimonial {
+export interface Inspiration {
   image?: string | StaticImageData;
   name: string;
   text: string;
