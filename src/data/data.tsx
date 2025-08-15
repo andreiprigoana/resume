@@ -42,10 +42,10 @@ import {
   ContactType,
   Hero,
   HomepageMeta,
+  InspirationSection,
   PortfolioItem,
   SkillGroup,
   Social,
-  InspirationSection,
   TimelineItem,
 } from './dataDef';
 
@@ -406,7 +406,7 @@ export const education: TimelineItem[] = [
     title: 'Technical University of Cluj-Napoca',
     content: (
       <>
-        Completed coursework in programming, algorithms, databases, and operating systems. Gained hands-on experience
+        Coursework in programming, algorithms, databases, and operating systems. Gained hands-on experience
         with software development, data structures, and web technologies.
         <br></br>
         <br></br>
