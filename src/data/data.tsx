@@ -82,8 +82,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Cluj-Napoca based <strong className="text-stone-100">Java Software Engineer</strong>, currently working at{' '}
-        <strong className="text-stone-100">Endava</strong> helping to build a modern, microservice platform, for one of
+  I'm a Cluj-Napoca based <strong className="text-stone-100">Java Development Lead</strong> at{' '}
+  <strong className="text-stone-100">Banca Transilvania</strong>, where I work on modernizing and re-engineering{' '}
+  legacy financial platforms. I enjoy building reliable, scalable systems while helping teams deliver{' '}
+  meaningful improvements to complex products.
+</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In the past I worked as a <strong className="text-stone-100">Java Software Engineer</strong>, at{' '}
+        <strong className="text-stone-100">Endava</strong> where I helped to build a modern, microservice platform, for one of
         the biggest payment gateways in the world.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -326,7 +332,34 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'January 2019 - Present',
+    date: 'October 2025 - Present',
+    location: 'Banca Transilvania',
+    title: 'Java Development Lead',
+    content: (
+      <p>
+        At <strong>Banca Transilvania</strong>, I am helping with the development and modernization of core financial platforms, 
+        with a strong focus on re-engineering legacy systems and moving them towards modern, maintainable architectures. 
+        One of my key responsibilities is driving the migration of the back-office platform from FlowX to Spring Boot-based applications, 
+        working closely with the team to ensure a smooth transition while maintaining business continuity and delivery standards.
+        <br></br>
+        <br></br>
+
+        Alongside my technical responsibilities, I contribute to building and growing the development team 
+        by conducting technical interviews and helping identify and select Java developers who are a strong fit 
+        for both the technical and collaborative needs of the team. 
+        As a <strong>Line Manager for five developers</strong>, I support their professional growth, 
+        provide guidance, and help establish an environment where the team can perform effectively.
+        <br></br>
+        <br></br>
+
+        I also work closely with <strong>Business Analysts, Solution Architects, Product teams, 
+        and other engineering teams</strong> to align technical implementation with business requirements, 
+        coordinate dependencies, resolve challenges, and ensure projects are delivered on time and to the expected quality standards.
+      </p>
+    ),
+  },
+  {
+    date: 'January 2019 - October 2025',
     location: 'Endava',
     title: 'Java Developer',
     content: (
